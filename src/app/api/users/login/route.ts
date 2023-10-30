@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import connectDB from "../../../../helpers/databaseConnection";
 import User from "../../../../models/user";
 import bcryptjs from "bcryptjs";
+import jwt from "jsonwebtoken";
+import { dataDecoder } from "../dataExtraction/route";
 
 connectDB();
 
@@ -46,11 +48,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    return NextResponse.json({
+    const response = NextResponse.json({
       message: "Found user",
       status: 200,
       user: existingUser,
     });
+
+    const tokenData = {
+      id: existingUser._id,
+      email: existingUser.email,
+    };
+
+    const jwtkey = await jwt.sign(tokenData, process.env.JWT_SECRET!);
+    console.log(jwtkey);
+    response.cookies.set("token", jwtkey);
+    return response;
   } catch (e: any) {
     return NextResponse.json(
       {

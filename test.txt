@@ -1,0 +1,118 @@
+JsonWebTokenError: invalid signature
+    at eval (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:158:25)
+    at getSecret (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:94:20)
+    at module.exports [as verify] (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:97:12)
+    at dataDecoder (webpack-internal:///(rsc)/./src/app/api/users/dataExtraction/route.ts:15:88)
+    at GET (webpack-internal:///(rsc)/./src/app/api/users/profile/route.ts:11:84)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:62505
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:121:36
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NoopTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18086)
+    at ProxyTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18847)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:107        
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:32)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56147
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:37057)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53934
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:36635)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53896
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at eD.execute (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53870)
+    at eD.handle (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:63748)
+    at doRender (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1217:56)  
+    at cacheEntry.responseCache.get.incrementalCache.incrementalCache (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1446:34)
+    at ResponseCache.get (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\response-cache\index.js:53:26)
+    at DevServer.renderToResponseWithComponentsImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1361:53)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:121
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:94:20)
+    at DevServer.renderToResponseWithComponents (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:41)
+    at DevServer.renderPageComponent (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1600:35)
+    at async DevServer.renderToResponseImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1638:32)
+    at async DevServer.pipeImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:826:25)
+    at async DevServer.handleCatchallRenderRequest (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\next-server.js:623:13)
+    at async DevServer.handleRequestImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:728:17)
+ ⨯ node_modules\jsonwebtoken\verify.js (171:18) @ eval
+ ⨯ unhandledRejection: JsonWebTokenError: invalid signature
+    at eval (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:158:25)
+    at getSecret (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:94:20)
+    at module.exports [as verify] (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:97:12)
+    at dataDecoder (webpack-internal:///(rsc)/./src/app/api/users/dataExtraction/route.ts:15:88)
+    at GET (webpack-internal:///(rsc)/./src/app/api/users/profile/route.ts:11:84)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:62505
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:121:36
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NoopTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18086)
+    at ProxyTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18847)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:107        
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:32)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56147
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:37057)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53934
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:36635)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53896
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at eD.execute (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53870)
+    at eD.handle (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:63748)
+    at doRender (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1217:56)  
+    at cacheEntry.responseCache.get.incrementalCache.incrementalCache (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1446:34)
+    at ResponseCache.get (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\response-cache\index.js:53:26)
+    at DevServer.renderToResponseWithComponentsImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1361:53)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:121
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:94:20)
+    at DevServer.renderToResponseWithComponents (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:41)
+    at DevServer.renderPageComponent (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1600:35)
+    at async DevServer.renderToResponseImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1638:32)
+    at async DevServer.pipeImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:826:25)
+    at async DevServer.handleCatchallRenderRequest (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\next-server.js:623:13)
+    at async DevServer.handleRequestImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:728:17)
+null
+ ⨯ node_modules\jsonwebtoken\verify.js (171:18) @ eval
+ ⨯ unhandledRejection: JsonWebTokenError: invalid signature
+    at eval (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:158:25)
+    at getSecret (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:94:20)
+    at module.exports [as verify] (webpack-internal:///(rsc)/./node_modules/jsonwebtoken/verify.js:97:12)
+    at dataDecoder (webpack-internal:///(rsc)/./src/app/api/users/dataExtraction/route.ts:15:88)
+    at GET (webpack-internal:///(rsc)/./src/app/api/users/profile/route.ts:11:84)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:62505
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:121:36
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NoopTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18086)
+    at ProxyTracer.startActiveSpan (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18847)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:107        
+    at NoopContextManager.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7057)
+    at ContextAPI.with (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:516)
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:110:32)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:56147
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:37057)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53934
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at Object.wrap (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:36635)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53896
+    at AsyncLocalStorage.run (node:async_hooks:346:14)
+    at eD.execute (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:53870)
+    at eD.handle (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:63748)
+    at doRender (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1217:56)  
+    at cacheEntry.responseCache.get.incrementalCache.incrementalCache (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1446:34)
+    at ResponseCache.get (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\response-cache\index.js:53:26)
+    at DevServer.renderToResponseWithComponentsImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1361:53)
+    at C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:121
+    at NextTracerImpl.trace (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\lib\trace\tracer.js:94:20)
+    at DevServer.renderToResponseWithComponents (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:903:41)
+    at DevServer.renderPageComponent (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1600:35)
+    at async DevServer.renderToResponseImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:1638:32)
+    at async DevServer.pipeImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:826:25)
+    at async DevServer.handleCatchallRenderRequest (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\next-server.js:623:13)
+    at async DevServer.handleRequestImpl (C:\Users\hp\Desktop\nextjs-app-with-hitesh\node_modules\next\dist\server\base-server.js:728:17)
+null

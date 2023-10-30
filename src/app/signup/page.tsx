@@ -32,7 +32,7 @@ const Signuppage = () => {
     ) {
       try {
         const response = axios.post("/api/users/signup", user);
-        promise(response); // Wait for the toast promise to complete
+        promise(response);
       } catch (error) {
         failure("Sending failed");
         console.error("Error during signup:", error);

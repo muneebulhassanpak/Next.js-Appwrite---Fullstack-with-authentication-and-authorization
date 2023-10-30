@@ -29,14 +29,10 @@ const Loginpage = () => {
   const onLogin = async (e: any) => {
     e.preventDefault();
     if (user.email.includes("@") && user.password.length > 0) {
-      try {
-        const response = axios.post("/api/users/login", user);
-        const computedResponse = await promise(response);
-        if (computedResponse.status == 200) {
-          router.push("/profile");
-        }
-      } catch (error) {
-        failure("Sending failed");
+      const response = axios.post("/api/users/login", user);
+      const computedResponse = await promise(response);
+      if (computedResponse.status == 200) {
+        router.push("/profile");
       }
     } else {
       failure("Fill in the form");
